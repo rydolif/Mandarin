@@ -1,0 +1,113 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background: #fff
+	z-index: 10
+	+transition
+	&.sticky
+		box-shadow: 0 0 20px rgba(#000, 0.1)
+		.header__top-wrap
+			padding: 10px 0
+	&__top
+		border-bottom: 1px solid #eaeaea
+	&__top-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 20px 0 15px
+		+transition
+
+	&__descr
+		margin: 0
+
+	&__btns
+		display: flex
+		align-items: center
+		.btn--transparent
+			padding: 10px 15px
+			border-radius: 4px 0 0 4px
+		.btn--blue
+			padding: 10px 15px
+			border-radius: 0 4px 4px 0
+
+	&__bottom
+		border-bottom: 1px solid #eaeaea
+
+
+.city
+	position: relative
+	p
+		margin: 0
+		b
+			color: $darken-gray
+			letter-spacing: 0.2px
+			text-decoration: underline
+			cursor: pointer
+			+transition
+			&:hover
+				color: $accent
+				text-decoration: none
+
+.city-list
+	position: absolute
+	top: 100%
+	left: 0
+	margin: 0
+	padding: 10px
+	list-style: none
+	background: #eff1f1
+	border-radius: 5px
+	+transition
+	opacity: 0
+	visibility: hidden
+	animation: slideUp 0.25s ease
+	z-index: 3
+	&.open
+		opacity: 1
+		visibility: visible
+	a
+		color: $main-color
+		+transition
+		&:hover, &:focus
+			color: $accent
+
+@keyframes slideUp
+	0%
+		opacity: 0
+		transform: translateY(20px)
+	100%
+		opacity: 1
+		transform: translateY(0)
+
+.phone
+	display: flex
+	align-items: center
+	&__left
+		margin-right: 25px
+	&__tel
+		display: block
+		font-size: 16px
+		font-weight: 600
+		color: $dark-gray
+		+transition
+		&:hover, &:focus
+			color: $accent
+	&__icon
+		width: 24px
+		height: 24px
+		fill: $gray
+		margin-right: 20px
+	&__callback
+		position: relative
+		display: block
+		padding: 7px 20px
+		font-weight: 600
+		color: $accent
+		background: #f6f7f7
+		border-radius: 50px
+		+transition
+		&:hover, &:focus
+			color: #fff
+			background-color: $accent

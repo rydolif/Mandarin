@@ -1,0 +1,127 @@
+.teacher
+	background: url('../img/teacher-bg.jpg') no-repeat center top / cover
+
+.teacher-slider
+	position: relative
+	max-width: 1200px
+	width: 100%
+	padding: 0 15px 85px
+	// padding-bottom: 85px
+	&__item
+		display: flex
+		background: #fff
+		border-radius: 2px
+		box-shadow: 0 10px 20px rgba(#000, 0.1)
+		.btn
+			position: absolute
+			bottom: -25px
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 1
+			text-transform: uppercase
+	&__left
+		width: 28.2%
+		// flex-shrink: 0
+		padding: 30px
+		padding-right: 55px
+		background: #f4f8fb
+		img
+			border-radius: 10px
+			margin-bottom: 10px
+		p
+			margin: 0
+			font-size: 15px
+			font-weight: 600
+			color: $dark-gray
+	&__right
+		width: 66.7%
+		padding: 30px
+		font-size: 16px
+		color: #555
+		h3
+			font-size: 30px
+			font-weight: 600
+			color: $dark-gray
+	&__diploma
+		position: relative
+		margin-top: 40px
+		h4
+			width: 100%
+			position: relative
+			font-size: 16px
+			color: $dark-gray
+			text-transform: uppercase
+			z-index: 1
+			// overflow: hidden
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				height: 1px
+				width: calc(100% + 30px)
+				background: #eaeaea
+				z-index: -1
+			span
+				display: inline-block
+				padding-right: 20px
+				background: #fff
+		.button-prev
+			left: -160px
+			bottom: 140px
+			top: auto
+		.button-next
+			left: -160px
+			right: auto
+			bottom: 90px
+			top: auto
+
+
+.teacher-diploma-slider
+	position: relative
+	left: -80px
+	padding: 45px 15px 70px
+	max-width: 800px
+	width: 100%
+	.swiper-wrapper
+		align-items: flex-end
+	&__item
+		text-align: center
+		img
+			box-shadow: 0 10px 10px rgba(#000, 0.1)
+
+.teacher-thumbnail
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	padding: 0 20px
+	.swiper-wrapper
+		margin-left: calc(-50% + 45px)
+	&__item
+		border-radius: 10px
+		cursor: pointer
+		overflow: hidden
+		&.swiper-slide-active
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				background: rgba($accent, 0.8)
+			&::after
+				content: '\f00c'
+				+font-aw
+				position: absolute
+				bottom: 10px
+				right: 10px
+				font-size: 22px
+				line-height: 1
+				color: #fff
+				z-index: 1
+	.teacher-btn-prev
+		left: 5px
+	.teacher-btn-next
+		right: 5px

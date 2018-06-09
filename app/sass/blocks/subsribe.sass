@@ -1,0 +1,42 @@
+.subsribe
+	position: relative
+	color: #fff
+	text-align: center
+	background: #eaa854 url('../img/subscribe-bg.jpg') no-repeat center / cover
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-image: linear-gradient(120deg, rgba(#f3b865, 0.9), rgba(#ed9673, 0.9))
+		z-index: -1
+	.section-title
+		font-size: 36px
+		color: #fff
+		text-shadow: 1px 0 2px rgba(#000, 0.15)
+	p
+		margin-bottom: 60px
+		font-size: 18px
+		font-weight: 600
+		text-shadow: 1px 0 2px rgba(#000, 0.15)
+	.form
+		max-width: 690px
+		width: 100%
+		margin: 0 auto
+		.form-group:not(:last-child)
+			margin-bottom: 80px
+		.form__field
+			padding-top: 20px
+			padding-bottom: 20px
+			border-radius: 8px
+			border: 1px solid #fff
+			background: rgba(#fff, 0.6)
+			font-size: 18px
+			font-weight: 600
+			color: #555
+			text-align: center
+			&::placeholder
+				color: inherit

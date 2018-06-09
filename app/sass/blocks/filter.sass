@@ -1,0 +1,29 @@
+.filter
+	display: flex
+	&__btn
+		padding: 7px 30px
+		background: #eff1f1
+		border: 1px solid $gray
+		border-left: 0
+		font-size: 16px
+		font-weight: 700
+		color: $main-color
+		cursor: pointer
+		+transition
+		&:first-child
+			border-left: 1px solid $gray
+			border-radius: 25px 0 0 25px
+		&:last-child
+			border-radius: 0 25px 25px 0
+		&:hover
+			background-color: $blue
+			border-color: $blue
+			color: #fff
+			box-shadow: 0 10px 30px rgba($blue, 0.5)
+		&:focus
+			outline: none
+		&.is-checked
+			background-color: $blue
+			border-color: $blue
+			color: #fff
+			box-shadow: 0 10px 30px rgba($blue, 0.5)

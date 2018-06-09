@@ -1,0 +1,279 @@
+.corporate
+
+.corporate-page
+	.hero
+		padding-bottom: 70px
+		h1
+			span
+				font-size: 48px
+				margin-bottom: 40px
+		&__content-left
+			width: 58.97%
+		&__content-right
+			width: 33.33%
+			padding-top: 0
+		&__form
+			position: relative
+			padding: 40px 35px
+			text-align: center
+			background: #fff
+			border-radius: 4px
+			box-shadow: 0 10px 30px rgba(#000, 0.2)
+			&::before
+				content: ''
+				position: absolute
+				top: -30px
+				left: -30px
+				display: block
+				width: calc(100% + 30px)
+				height: calc(100% + 60px)
+				border: 10px solid rgba(#f6f7f7, 0.2)
+				z-index: -1
+			h3
+				margin-bottom: 50px
+				font-size: 18px
+				font-weight: 600
+				color: $dark-gray
+			.form-group
+				margin-bottom: 15px
+			.form__field
+				padding-top: 15px
+				padding-bottom: 15px
+				text-align: center
+			.form__btn
+				width: 100%
+				margin-top: 15px
+				padding-top: 20px
+				padding-bottom: 20px
+				text-transform: uppercase
+
+.corporate-it-work
+	padding-bottom: 0
+	&__content
+		font-size: 16px
+		h3
+			margin-bottom: 30px
+			font-size: 18px
+			color: $dark-gray
+		p
+			strong, b
+				color: $dark-gray
+
+.corporate-why-list
+	margin: 0
+	padding: 0 60px
+	list-style-type: none
+	display: flex
+	&__item
+		position: relative
+		flex-basis: 20%
+		flex-grow: 1
+		padding-top: 40px
+		padding-right: 60px
+		&::before
+			content: '\f0a9'
+			+font-aw
+			position: absolute
+			top: 0
+			left: 0
+			// width: 16px
+			// height: 16px
+			font-size: 16px
+			color: $accent
+			line-height: 1
+			// background: $accent
+			// border-radius: 50%
+		&::after
+			content: ''
+			position: absolute
+			top: 8px
+			left: 0
+			width: 100%
+			height: 1px
+			background: rgba($accent, 0.2)
+			z-index: -1
+		&:last-child
+			padding-right: 0
+			flex-basis: 15%
+			&::after
+				display: none
+
+.corporate-offer
+	background: url('../img/corporate-section-bg.jpg') no-repeat center 60%
+
+.corporate-offer-list
+	margin: 0
+	padding: 0 120px
+	list-style: none
+	display: flex
+	&__item
+		display: flex
+		flex-direction: column
+		width: 48.71%
+		margin-right: 2.58%
+		padding: 30px 30px 50px
+		background: #fff
+		border-radius: 4px
+		box-shadow: 0 10px 30px rgba(#000, 0.15)
+		&:last-child
+			margin-right: 0
+	&__title-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 30px
+		padding: 10px
+		text-align: center
+		background: $blue
+		border-radius: 8px
+		h3
+			margin: 0
+			font-size: 24px
+			font-weight: 900
+			color: #fff
+	&__content
+		ul
+			margin: 0
+			margin-bottom: 30px
+			padding: 0
+			list-style: none
+			li
+				position: relative
+				margin-bottom: 10px
+				padding-left: 30px
+				font-size: 18px
+				&::before
+					content: '\f058'
+					+font-aw
+					position: absolute
+					top: -3px
+					left: 0
+					color: $dark-gray
+				&:last-child
+					margin-bottom: 0
+	&__price
+		display: block
+		margin-bottom: 60px
+		font-size: 24px
+		font-weight: 900
+		color: $dark-gray
+	&__bottom
+		margin-top: auto
+
+.corporate-work
+	padding-top: 200px
+	.section-title
+		// margin-bottom: 120px
+	&__wrap
+		position: relative
+		padding: 100px 90px
+	&__line
+		position: absolute
+		top: 100px
+		left: 50%
+		transform: translateX(-50%)
+
+.corporate-work-list
+	margin: 0
+	padding: 0
+	list-style: none
+	counter-reset: list
+	display: flex
+	align-items: flex-start
+	&__item
+		position: relative
+		flex-grow: 1
+		width: 20%
+		padding-top: 30px
+		font-size: 15px
+		font-weight: 600
+		color: $dark-gray
+		&::before
+			content: '0'counter(list) '.'
+			counter-increment: list
+			position: absolute
+			top: 0
+			left: 0
+			font-size: 16px
+			font-weight: 900
+			color: $accent
+		&::after
+			content: ''
+			position: absolute
+			width: 20px
+			height: 20px
+			background: #fff
+			border: 3px solid $accent
+			border-radius: 50%
+			box-shadow: 0 0 30px rgba($accent, 0.2)
+			z-index: 1
+		&:nth-child(odd)
+			margin-top: 120px
+			&::after
+				top: -50px
+				left: 20px
+		&:nth-child(even)
+			margin-top: -70px
+			&::after
+				bottom: -50px
+				left: 0
+		&:nth-child(3)
+			margin-top: 100px
+			&::after
+				top: -40px
+		&:nth-child(4)
+			margin-top: -100px
+			&::after
+				bottom: -35px
+				left: 20px
+		&:nth-child(5)
+			margin-top: 70px
+			&::after
+				top: -80px
+		&:nth-child(6)
+			margin-top: -100px
+			&::after
+				bottom: -30px
+				left: auto
+				right: 25px
+
+.advantages-training
+	padding-top: 140px
+
+.advantages-training-list
+	margin: 0
+	padding: 0 175px
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	&__item
+		position: relative
+		width: 33.33%
+		padding: 50px 35px 50px 120px
+		border: 1px solid #eaeaea
+		border-top: 0
+		border-left: 0
+		&:nth-child(3n)
+			border-right: 0
+		&:nth-last-child(-n+3)
+			border-bottom: 0
+			padding-bottom: 20px
+		h3
+			margin-bottom: 0
+			font-size: 18px
+			color: $dark-gray
+		p
+			margin: 0
+			font-size: 16px
+	&__icon
+		position: absolute
+		top: 40px
+		left: 20px
+		width: 80px
+		height: 80px
+		border-radius: 50%
+		border: 1px solid $accent
+		text-align: center
+		line-height: 80px
+		img
+			width: 40px

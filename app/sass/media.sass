@@ -1,0 +1,1924 @@
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1439px)
+	.page-news
+		.search__wrap
+			padding: 0
+		&__list
+			padding: 20px 0 0 0
+
+	.page-article
+		.article
+			&__wrap
+				padding: 0 0
+
+			&__content
+				padding: 0 0
+
+	.header
+		&__btns
+			flex-direction: column
+			align-items: stretch
+			.btn--transparent
+				border-radius: 4px 4px 0 0
+			.btn--blue
+				border-radius: 0 0 4px 4px
+
+	.nav-list
+		li
+			padding-right: 15px
+			padding-left: 15px
+
+	.hero
+		margin-top: 140px
+		&__content
+			padding: 0
+
+	.method
+		&__left
+			padding-left: 0
+		&__item
+			max-width: 270px
+			a
+				padding-left: 90px
+			svg
+				left: 35px
+			&--accent
+				max-width: 330px
+
+	.our-goal-list
+		padding: 0
+
+	.life
+		.btn
+			right: 110px
+			bottom: 35px
+
+	.life-gallery
+		&__item
+			&:nth-child(1)
+				left: 0
+			&:nth-child(2)
+				left: 300px
+			&:nth-child(3)
+				left: 350px
+			&:nth-child(4)
+				right: 200px
+				bottom: 50px
+			&:nth-child(5)
+				right: 80px
+				top: 40px
+
+	.news
+		&__container
+			padding: 0
+
+	.partner-list
+		padding: 0
+
+	.advantages
+		&__wrap
+			padding: 0
+		&__right
+			width: 65%
+
+	.footer
+		&__contact
+			a[href^=tel]
+				font-size: 24px
+			.btn
+				font-size: 16px
+
+		&__quick-response-btn
+			max-width: 260px
+
+	.content
+		padding-left: 120px
+
+	.online-course
+		&__top
+			padding: 0
+
+	.online-course-list
+		padding: 0
+
+	.department
+		&__content
+			padding: 0
+		&__arrow
+			top: 40%
+
+	.hsk
+		&__bottom
+			.btn
+				max-width: 250px
+		&__title-wrap
+			h3
+				font-size: 20px
+
+	.select-hsk-list
+		&__content
+			padding-left: 30px
+			padding-right: 30px
+
+	.teacher-slider
+		&__right
+			width: 66.2%
+
+	.teacher-slider
+		&__left
+			p
+				font-size: 14px
+
+	.course-list
+		padding: 0
+		&__item
+			width: 23.6%
+			padding-left: 70px
+			h3
+				font-size: 14px
+
+	.certificate
+		&__wrap
+			padding: 0
+		&__left
+			&::after
+				left: 50%
+				transform: translateX(-50%)
+		.decorate-arrow
+			top: 165px
+
+	.group-course-list
+		padding: 0
+		&__name
+			padding-left: 35px
+			padding-right: 35px
+
+	.calc-course
+		&__wrap
+			padding-right: 20px
+			padding-left: 20px
+			padding-bottom: 100px
+
+	.calc-course-form
+		&__big
+			.calc-course-form__btn
+				width: 31.6%
+		&__btn
+			width: 47%
+			label
+				font-size: 14px
+
+	.pluses
+		&__wrap
+			padding: 0
+
+	.corporate-page
+		.hero
+			h1
+				span
+					font-size: 46px
+
+	.corporate-why-list,
+	.corporate-offer-list
+		padding: 0
+
+	.corporate-work
+		&__wrap
+			padding-right: 0
+			padding-left: 0
+		&__line
+			width: 95%
+
+	.corporate-work-list
+		&__item
+			&:nth-child(5)
+				&::after
+					top: -75px
+			&:nth-child(6)
+				&::after
+					bottom: -10px
+
+	.advantages-training-list
+		padding-right: 40px
+		padding-left: 40px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.page-news
+		&__list
+			h3
+				margin-bottom: 0
+		&__item
+			margin-bottom: 25px
+
+	.page-article
+		.article
+			iframe
+				margin-bottom: 20px
+
+			&__wrap_img
+				margin-bottom: 40px
+
+			&__gallery
+				&_container
+					a
+						&:nth-child(n+5)
+							margin-bottom: 20px
+
+	.header
+		&__descr
+			display: none
+		&__top, &__bottom
+			border: 0
+		&__top-wrap
+			position: relative
+		&__phone
+			margin-right: 50px
+		&__logo
+			img
+				width: 170px
+		&.sticky
+			.nav-toggle
+				top: 30px
+
+	.nav
+		position: fixed
+		top: 0
+		right: 0
+		width: 320px
+		height: 100%
+		overflow-x: hidden
+		background: #fff
+		z-index: 100
+		box-shadow: 0 5px 10px rgba(#000, 0.1)
+		transform: translateX(100%)
+		+transition
+		&.open
+			transform: translateX(0)
+
+		.nav-list
+			flex-direction: column
+			padding: 50px 15px 30px
+			li
+				padding: 0
+				border: 0
+				background: none
+				&.menu-item-has-children
+					&::after
+						display: none
+					.sub-menu
+						position: static
+						display: block
+						padding: 0
+						padding-left: 15px
+						box-shadow: none
+						li
+							margin: 0
+					&:hover
+						.sub-menu
+							animation: none
+				&.nav-list__action
+					a
+						&:hover
+							color: #fff
+			a
+				display: block
+				padding: 5px 0
+				+transition
+				&:hover
+					color: $accent
+
+		&__content
+			display: block
+			padding: 15px 15px 30px
+			border-top: 1px solid $light-gray
+			.city
+				margin-bottom: 10px
+			.header__btns
+				margin-bottom: 10px
+			.phone
+				margin: 0
+				flex-direction: column
+				text-align: center
+				&__icon
+					display: none
+				&__left
+					margin: 0
+					margin-bottom: 10px
+
+	.nav-toggle
+		display: block
+
+	.hero
+		margin-top: 108px
+		padding: 60px 0 120px
+		h1
+			font-size: 22px
+			span
+				font-size: 40px
+		p
+			font-size: 16px
+
+		&__content-left
+			width: 49%
+		&__content-right
+			width: 49%
+			padding-top: 20px
+
+	.method
+		&__left
+			margin-right: 30px
+		&__item
+			width: 45%
+			max-width: none
+			a
+				padding: 15px 15px 15px 70px
+			svg
+				left: 20px
+			&--accent
+				width: 100%
+				max-width: 260px
+				a
+					padding-top: 20px
+					padding-bottom: 20px
+				svg
+					left: 10px
+
+	.life
+		.btn
+			right: 50px
+			bottom: 55px
+
+	.life-gallery
+		min-height: 360px
+		&__item
+			&:nth-child(1)
+				top: 150px
+				width: 280px
+				height: 155px
+			&:nth-child(2)
+				left: 230px
+				img
+					height: 140px
+			&:nth-child(3)
+				left: 300px
+				img
+					height: 170px
+			&:nth-child(4)
+				right: 160px
+				bottom: 80px
+				img
+					height: 170px
+			&:nth-child(5)
+				top: 10px
+				right: 40px
+
+	.partner-list
+		&__item
+			width: 25%
+
+	.advantages
+		&__left
+			width: 30%
+			h2
+				margin-bottom: 40px
+				font-size: 26px
+			&-bottom
+				.btn
+					padding-left: 20px
+					padding-right: 20px
+					font-size: 12px
+
+	.advantages-list
+		&__item
+			h3
+				font-size: 16px
+				span
+					font-size: inherit
+			a
+				padding-left: 90px
+		&__icon
+			width: 40px
+			height: 40px
+
+	.footer
+		&__contact-wrap
+			align-items: center
+		&__contact
+			flex-direction: column
+			text-align: center
+			&-left
+				margin-bottom: 10px
+		&__quick-response
+			flex-wrap: wrap
+			p
+				width: 100%
+				margin-bottom: 10px
+			&-btn
+				max-width: 290px
+
+	.contact
+		&__content
+			padding-left: 0
+
+	.content
+		padding: 0
+
+	.online-course-list
+		&__content
+			font-size: 14px
+		&__price
+			strong, b
+				padding-left: 57px
+
+	.department
+		&__content-right
+			width: 70%
+		&__content
+			h3
+				font-size: 22px
+		&__arrow
+			top: 30%
+			right: 30px
+			width: 50px
+			height: 50px
+			line-height: 60px
+
+	.hsk
+		&__item
+			padding: 15px
+			background-position: 110% 100%
+		&__title-wrap
+			h3
+				font-size: 16px
+				span
+					font-size: 30px
+
+	.hsk-page
+		.hero
+			h1
+				span
+					font-size: 38px
+
+	.select-hsk-list
+		&__item
+			margin-right: 20px
+			&:last-child, &:nth-child(3n)
+				margin-right: 0
+		&__content
+			padding: 15px
+
+	.teacher-slider
+		&__left
+			padding-right: 30px
+
+	.course-page
+		.hero
+			&__content
+				p
+					br
+						display: none
+
+	.course-list
+		&__item
+			width: 31.8%
+			&:nth-child(3n)
+				margin-right: 0
+			&:nth-child(4n)
+				margin-right: 20px
+
+	.banner
+		padding-right: 360px
+		p
+			br
+				display: none
+
+	.certificate
+		&__left
+			&::after
+				top: 50%
+				width: 550px
+				height: 550px
+				transform: translate(-50%, -50%)
+				z-index: -1
+		&__right
+			p
+				b
+					font-size: 20px
+		.decorate-arrow
+			top: 185px
+
+	.group-course
+		padding-top: 40px
+
+	.group-course-list
+		&__name
+			width: 37%
+			padding: 20px
+		&__date
+			padding: 20px
+		&__price
+			padding: 20px
+			padding-right: 210px
+
+	.calc-course-form
+		display: flex
+		justify-content: space-between
+		.form-group
+			flex-direction: column
+			flex-basis: 60%
+			&:nth-child(1)
+				flex: 1 1 0
+				margin-right: 20px
+			fieldset
+				margin-right: 0
+		&__big
+			.calc-course-form__btn
+				width: 47.5%
+				margin-bottom: 10px
+		&__bottom
+			left: 50px
+			right: 50px
+
+	.pluses-list
+		&__item
+			padding-left: 70px
+			padding-bottom: 20px
+			padding-right: 20px
+			svg
+				left: 0
+			&:nth-child(1), &:nth-child(4)
+				&::after
+					width: 270px
+			&:nth-child(2n)
+				padding-left: 90px
+				padding-right: 0
+				svg
+					left: 20px
+
+	.testimonial-slider
+		.swiper-button-prev
+			left: 150px
+		.swiper-button-next
+			right: 150px
+
+	.corporate-why-list
+		&__item
+			padding-right: 20px
+
+	.corporate-offer-list
+		&__title-wrap
+			h3
+				font-size: 20px
+		&__bottom
+			.form--hr
+				flex-direction: column
+				.form-group
+					margin-right: 0
+					max-width: none
+
+	.corporate-work-list
+		&__item
+			&:nth-child(odd)
+				margin-top: 110px
+			&:nth-child(even)
+				margin-top: -100px
+			&:nth-child(3)
+				margin-top: 90px
+			&:nth-child(4)
+				margin-top: -120px
+			&:nth-child(5)
+				margin-top: 80px
+			&:nth-child(6)
+				&::after
+					bottom: -10px
+					right: 15px
+
+	.advantages-training
+		padding-top: 0
+
+	.advantages-training-list
+		padding: 0
+		&__item
+			padding: 40px 25px 40px 100px
+			h3
+				font-size: 16px
+			p
+				font-size: 14px
+		&__icon
+			width: 60px
+			height: 60px
+			line-height: 60px
+			img
+				width: 30px
+
+	.testimonial-client-slider
+		padding: 0 120px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.page-news
+		&__item
+			height: 100%
+			margin-bottom: 25px
+			&:nth-child(1)
+				width: 100%
+				flex-wrap: wrap
+				height: 100%
+				div
+					width: 100%
+				img
+					width: 100%
+					height: 40%
+					margin-bottom: 10px
+
+			&:nth-child(n+2)
+				width: 100%
+				height: 100%
+				flex-wrap: wrap
+				img
+					width: 100%
+					height: 40%
+					margin-bottom: 10px
+
+			&:nth-child(5)
+				width: 100%
+				height: 100%
+				flex-direction: row
+				div
+					width: 100%
+				img
+					width: 100%
+					height: 40%
+					margin-bottom: 10px
+
+
+	.page-article
+		.article
+			iframe
+				width: 100%
+
+			&__wrap
+				h3
+					margin-bottom: 20px
+					font-size: 18px
+
+				.note
+					padding-right: 45px
+
+
+	.header
+		&__city
+			display: none
+		&__phone
+			.phone__left
+				margin-right: 15px
+			.phone__icon
+				display: none
+			.phone__tel
+				font-size: 14px
+
+	.nav
+		&__content
+			.city
+				display: block
+			.phone__left
+				margin-right: 0
+			.phone__tel
+				font-size: 16px
+
+	.hero
+		margin-top: 80px
+		&__content
+			flex-direction: column
+			&-left
+				width: auto
+				text-align: center
+			&-right
+				width: 70%
+		h1
+			margin-bottom: 30px
+			br
+				display: none
+		p
+			&::before
+				margin: 0 auto 10px
+
+	.language-training
+		&__item
+			padding: 20px 20px 70px
+
+	.method
+		&__right
+			flex-grow: 1
+		&__left
+			.btn
+				margin-top: 30px
+		&__item
+			display: block
+			width: 100%
+			margin: 0
+			margin-bottom: 10px
+			&--accent
+				width: 100%
+				max-width: none
+
+	.our-goal
+		&__content
+			p
+				&:first-child
+					br
+						display: none
+
+	.our-goal-list
+		flex-wrap: wrap
+		align-items: stretch
+		&__item
+			position: static
+			width: 49%
+			top: auto
+			margin-bottom: 20px
+		&__img-wrap
+			&::after
+				height: 25px
+
+	.life
+		.btn
+			position: static
+			display: block
+			width: 100%
+			max-width: 280px
+			margin: 20px auto 0
+
+	.life-gallery
+		min-height: auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			position: static
+			top: auto
+			right: auto
+			bottom: auto
+			left: auto
+			width: 49%
+			height: auto
+			margin-bottom: 20px
+			img
+				width: 100%
+				height: auto
+			&:nth-child(1)
+				width: 49%
+				height: auto
+				border: 6px solid #fff
+				.youtube
+					padding-top: 65%
+				img
+					top: -8%
+					width: 100%
+					height: auto
+			&:nth-child(n + 2)
+				height: auto
+				img
+					width: 100%
+					height: auto
+
+	.news
+		&__accent
+			margin-bottom: 30px
+		&__container
+			.btn
+				float: none
+				display: block
+				max-width: 200px
+				margin: 0 auto
+
+	.partner-list
+		.swiper-wrapper
+			align-items: center
+
+	.advantages
+		&__wrap
+			flex-direction: column
+		&__left
+			width: 100%
+			margin-bottom: 30px
+			&-bottom
+				float: right
+				margin: 0
+		&__right
+			width: 100%
+		&__tel
+			display: inline-block
+			margin-top: 13px
+
+	.footer
+		&__contact-wrap
+			margin-top: 20px
+			padding-bottom: 20px
+			flex-direction: column
+		&__contact
+			width: 100%
+			margin: 0
+			margin-top: 20px
+		&__quick-response-btn
+			max-width: 220px
+			padding-right: 20px
+			padding-left: 20px
+			font-size: 15px
+
+	.section
+		padding: 60px 0
+
+	.action-page
+		.hero
+			&__content
+				h1
+					font-size: 30px
+				p
+					&:last-child
+						font-size: 18px
+						br
+							display: none
+			&__bottom
+				margin-top: 25px
+
+	.action
+		&__filter-btn
+			font-size: 14px
+			padding-right: 15px
+			padding-left: 15px
+
+	.action-list
+		&__item
+			h3
+				+ p
+					margin-bottom: 25px
+
+	.contact
+		padding: 0
+
+	.online-course
+		&__top
+			flex-direction: column
+			margin-bottom: 30px
+			.section-title
+				margin: 0
+				margin-bottom: 40px
+
+	.online-course-list
+		flex-wrap: wrap
+		&__item
+			width: 47.82%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+	.department
+		&__content
+			flex-direction: column-reverse
+			&-right
+				width: auto
+		&__arrow
+			display: none
+
+	.subsribe
+		.section-title
+			font-size: 30px
+		p
+			margin-bottom: 30px
+		.form
+			.form-group:not(:last-child)
+				margin-bottom: 40px
+
+	.hsk-page
+		.hero
+			h1
+				span
+					font-size: 28px
+			h2
+				font-size: 18px
+			&__bottom
+				bottom: 0
+
+	.hsk
+		&__item
+			flex-direction: column
+			background-image: url('../img/hsk-item-tablet-bg-2.png')
+			background-position: 100% 100%
+		&__title-wrap
+			width: auto
+			margin: 0
+			margin-bottom: 20px
+			background-image: url('../img/hsk-item-table-bg.jpg')
+			h3
+				span
+					margin-top: 10px
+		&__content
+			width: auto
+			margin-bottom: 20px
+			padding: 0
+		&__bottom
+			padding: 0
+			padding-bottom: 20px
+
+	.select-hsk-list
+		&__item
+			width: 48%
+			&:nth-child(2n), &:last-child
+				margin-right: 0
+			&:nth-child(3n)
+				margin-right: 20px
+
+	.teacher-slider
+		&__left
+			width: 38%
+		&__right
+			width: 52%
+
+	.course-page
+		.hero
+			h1
+				span
+					font-size: 36px
+			&__content
+				p
+					font-size: 22px
+			&__bottom
+				margin-top: 50px
+
+	.course-list
+		&__item
+			width: 48.5%
+			&:nth-child(3n)
+				margin-right: 20px
+			&:nth-child(2n)
+				margin-right: 0
+			svg
+				top: 20px
+			h3
+				br
+					display: none
+
+	.course
+		padding-bottom: 0
+
+	.banner
+		padding: 20px
+		text-align: center
+		p
+			margin-bottom: 20px
+		.btn--white
+			position: static
+			transform: none
+		&--orange
+
+			img
+				position: static
+				width: 250px
+				right: 0
+				top: -20px
+
+	.certificate
+		&__left
+			width: 50%
+			height: auto
+			padding-top: 50px
+			align-items: flex-start
+			&::before
+				width: 280px
+				height: 280px
+			&::after
+				width: 350px
+				height: 350px
+		&__right
+			width: 44%
+			padding-top: 0
+		.decorate-arrow
+			top: 35px
+
+	.group-course-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			flex-direction: column
+			width: 49%
+			border-top: 4px solid $blue
+			border-left: 0
+			text-align: center
+		&__name, &__date, &__price
+				width: 100%
+		&__price
+			padding: 20px
+			overflow: hidden
+			.btn
+				position: static
+				margin-top: 20px
+				transform: none
+
+	.calc-course
+		&__wrap
+			padding-bottom: 50px
+
+	.calc-course-form
+		.form-group
+			flex: auto
+			width: 50%
+			&:nth-child(1)
+				flex: auto
+			fieldset
+				display: flex
+				flex-direction: column
+		&__btn
+			display: block
+			width: 100%
+			margin: 0
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+		&__big
+			.calc-course-form__btn
+				width: 100%
+		&__bottom
+			left: 20px
+			right: 20px
+			.form__btn
+				font-size: 11px
+
+	.pluses
+		&__left
+			padding: 20px
+			svg
+				width: 100px
+				height: 100px
+			p
+				font-size: 15px
+
+	.pluses-list
+		flex-direction: column
+		&__item
+			width: 100%
+			padding: 15px
+			padding-left: 60px
+			&::after
+				display: none
+			&:nth-child(2n)
+				padding-left: 60px
+				svg
+					left: 0
+			svg
+				width: 40px
+				height: 40px
+			h3
+				span
+					font-size: 16px
+
+	.testimonial-slider
+		.swiper-button-prev
+			left: 0
+		.swiper-button-next
+			right: 0
+
+	.corporate-page
+		.hero
+			&__content-left,
+			&__content-right
+				width: auto
+			&__content-left
+				margin-bottom: 30px
+			&__form
+				max-width: 390px
+				margin: 0 auto
+
+	.corporate-why-list
+		flex-wrap: wrap
+		&__item
+			flex-basis: 50%
+			margin-bottom: 30px
+
+	.corporate-offer-list
+		flex-direction: column
+		&__item
+			width: auto
+			margin: 0
+			margin-bottom: 30px
+			padding: 20px
+		&__bottom
+			.form--hr
+				flex-direction: row
+				.form-group
+					margin-right: 20px
+					margin-bottom: 0
+					&:last-child
+						margin-right: 0
+
+	.corporate-work-list
+		flex-wrap: wrap
+		&__item
+			margin: 0
+			width: 33.33%
+			padding-right: 20px
+			&::after
+				display: none
+			&:nth-child(odd)
+				margin: 0
+				margin-bottom: 30px
+			&:nth-child(even)
+				margin: 0
+				margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+	.corporate-work
+		&__wrap
+			padding: 0
+		&__line
+			display: none
+
+	.advantages-training-list
+		&__item
+			width: 50%
+			&:nth-child(2n)
+				border-right: 0
+			&:nth-child(3n)
+				border-right: 1px solid #eaeaea
+				border-bottom: 1px solid #eaeaea
+			&:nth-last-child(3)
+				padding-bottom: 40px
+				border-bottom: 1px solid #eaeaea
+			&:last-child
+				border-bottom: 0
+				border-right: 0
+
+	.testimonial-client-slider
+		padding: 0 80px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	.page-news
+		.search__wrap
+			flex-wrap: wrap
+
+			.hr
+				margin: 10px 0
+			ul
+				flex-wrap: wrap
+
+		.search
+			width: 100%
+			input
+				width: 100%
+
+		&__btn
+			padding: 15px
+
+	.page-article
+		.article
+			h4
+				margin-bottom: 20px
+
+			p
+				margin-bottom: 20px
+			
+			ul
+				margin-bottom: 20px
+
+			&__wrap
+				.note
+					margin-bottom: 20px
+					padding: 20px 40px 20px 70px
+					&::before
+						left: 25px
+						
+			&__gallery
+				padding-bottom: 30px
+				p
+					margin-bottom: 0
+
+
+			&__form
+				padding-top: 30px
+
+
+	.header
+		&__logo
+			img
+				width: 150px
+		&__btns
+			display: none
+		&.sticky
+			.nav-toggle
+				top: 18px
+
+	.nav-toggle
+		top: 28px
+
+	.nav
+		&__content
+			.header__btns
+				display: flex
+
+	.hero
+		margin-top: 60px
+		&__content-right
+			width: 100%
+			text-align: center
+		&__offer-item
+			text-align: left
+
+	.language-training
+		&-list
+			margin-bottom: 60px
+		&__item
+			margin-bottom: 20px
+			height: auto
+			&:nth-child(n)
+				margin-bottom: 20px
+		&__list
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			li
+				width: 49%
+			a
+				display: block
+
+	.method
+		flex-direction: column
+		&__left
+			width: 100%
+			margin-bottom: 60px
+			text-align: center
+
+	.our-goal
+		&__content
+			margin-bottom: 60px
+
+	.life
+		padding-top: 0
+
+	.advantages-list
+		flex-direction: column
+		&__item
+			width: 100%
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+
+	.footer
+		&__top
+			flex-direction: column
+		&__menu
+			margin: 0
+			h3
+				position: relative
+				padding-bottom: 10px
+				border-bottom: 1px solid rgba($gray, 0.5)
+				&::after
+					content: '\f067'
+					+font-aw
+					font-size: 12px
+					position: absolute
+					top: 3px
+					right: 10px
+				&.active
+					&::after
+						content: '\f068'
+			ul
+				display: none
+
+		&__quick-response
+			text-align: center
+			&-btn
+				max-width: none
+				width: 100%
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+
+	.action-page
+		.hero
+			p
+				&:last-child
+					font-size: 16px
+
+	.form--hr
+		flex-direction: column
+		justify-content: center
+		.form-group
+			margin: 0 auto 20px
+			&:last-child
+				margin: 0 auto 20px
+
+	.action
+		&__filter
+			flex-direction: column
+			margin-bottom: 30px
+			&-btn
+				margin-bottom: 10px
+				border-radius: 50px
+				&:first-child, &:last-child
+					border-radius: 50px
+
+	.contact
+		&__content
+			padding-bottom: 60px
+			text-align: center
+		&__map
+			position: static
+			height: 300px
+		&__list
+			left: 50%
+			transform: translateX(-50%)
+
+	.social-list
+		justify-content: center
+
+	.content
+		p, ul
+			padding-left: 0
+
+	.online-course-list
+		&__item
+			width: auto
+
+	.hsk-page
+		.hero
+			padding-bottom: 60px
+			&__content
+				text-align: center
+			p
+				br
+					display: none
+
+	.select-hsk-list
+		&__item
+			width: 100%
+			margin-right: 0
+			&:nth-child(3n)
+				margin-right: 0
+			&:last-child
+				margin-bottom: 0
+		&__content
+			text-align: center
+
+	.teacher-slider
+		&__item
+			flex-direction: column
+			.btn
+				width: 250px
+		&__left
+			width: auto
+			text-align: center
+			img
+				width: 150px
+				height: 150px
+		&__right
+			width: auto
+
+	.teacher-diploma-slider
+		left: auto
+		width: auto
+		padding-left: 10px
+		padding-right: 10px
+
+	.teacher-slider
+		&__diploma
+			.button-prev
+				top: 50%
+				bottom: auto
+				transform: translateY(-50%)
+				left: 0
+			.button-next
+				top: 50%
+				bottom: auto
+				transform: translateY(-50%)
+				left: auto
+				right: 0
+
+	.course-list
+		&__item
+			width: 100%
+			margin-right: 0
+			&:nth-child(3n)
+				margin-right: 0
+
+	.certificate
+		.section-title
+			br
+				display: none
+		&__wrap
+			flex-direction: column
+		&__left, &__right
+			width: 100%
+		&__left
+			padding-top: 0
+			margin-bottom: 30px
+		&__right
+			text-align: center
+			.btn
+				max-width: 300px
+		.decorate-arrow
+			display: none
+
+	.group-course-list
+		&__item
+			width: 100%
+			margin-bottom: 20px
+
+	.calc-course
+		&__wrap
+			padding-bottom: 20px
+
+	.calc-course-form
+		flex-direction: column
+		.form-group
+			width: 100%
+			&:nth-child(1)
+				margin-right: 0
+			fieldset
+				margin-bottom: 20px
+		&__bottom
+			position: static
+			margin-top: 30px
+
+	.pluses
+		&__wrap
+			flex-direction: column
+		&__left
+			width: 100%
+			margin: 0 auto 50px
+		&__right
+			width: 100%
+
+	.corporate-work-list
+		&__item
+			width: 50%
+
+	.advantages-training-list
+		&__item
+			padding-left: 80px
+		&__icon
+			left: 10px
+			width: 50px
+			height: 50px
+			line-height: 50px
+			img
+				width: 25px
+
+	.testimonial-client-slider
+		padding: 0
+		.swiper-button-prev,
+		.swiper-button-next
+			top: 30px
+			width: 40px
+			height: 40px
+			font-size: 16px
+			line-height: 40px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 576px)
+	.header
+		.phone
+			&__left
+				margin: 0
+				text-align: right
+			&__right
+				display: none
+		&.sticky
+			.nav
+				top: 66px
+				height: calc(100% - 66px)
+
+	.nav
+		top: 80px
+		height: calc(100% - 80px)
+		&__content
+			.phone__right
+				display: block
+			.phone__left
+				text-align: center
+				margin-bottom: 10px
+
+	.our-goal-list
+		&__item
+			width: 100%
+		&__img-wrap
+			&::after
+				bottom: 0
+				height: 40px
+
+	.advantages
+		h2
+			text-align: center
+		&__left
+			text-align: center
+			&-bottom
+				float: none
+				.btn
+					display: block
+					max-width: 270px
+					width: 100%
+					margin: 15px auto 0
+		&__tel
+			margin-bottom: 15px
+
+	.advantages-list
+		&__item
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+
+	.contact
+		.col-lg-7
+			padding: 0
+
+	.footer
+		&__bottom
+			flex-direction: column
+			text-align: center
+		&__logo
+			margin-bottom: 20px
+		&__contact
+			padding: 20px
+
+	.copyright
+		margin: 0
+
+	.online-course
+		&__top
+			align-items: stretch
+		.filter
+			flex-direction: column
+			&__btn
+				margin-bottom: 10px
+				border-radius: 50px
+				&:first-child, &:last-child
+					border-radius: 50px
+
+	.corporate-page
+		.hero
+			h1
+				span
+					font-size: 40px
+			&__form
+				&::before
+					display: none
+
+	.corporate-why-list
+		flex-direction: column
+		&__item
+			margin-bottom: 0
+			padding-top: 0
+			padding-bottom: 30px
+			padding-left: 30px
+			br
+				display: none
+			&::before
+				top: 3px
+				transform: rotate(90deg)
+			&::after
+				left: 7px
+				width: 1px
+				height: 100%
+
+	.corporate-offer-list
+		&__bottom
+			.form--hr
+				flex-direction: column
+				.form-group
+					margin-right: 0
+					margin-bottom: 20px
+					&:last-child
+						margin-bottom: 0
+
+	.corporate-work-list
+		&__item
+			width: 100%
+			padding-right: 0
+
+	.advantages-training-list
+		&__item
+			width: 100%
+			padding-top: 20px
+			padding-bottom: 20px
+			padding-right: 0
+			padding-left: 70px
+			border-right: 0
+			&:first-child
+				padding-top: 0
+				.advantages-training-list__icon
+					top: 0
+			&:nth-child(3n)
+				border-right: 0
+			&:nth-last-child(2)
+				border-bottom: 1px solid #eaeaea
+			&:nth-last-child(3)
+				padding-bottom: 20px
+		&__icon
+			top: 20px
+			left: 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.page-article
+		.article
+			&__gallery
+				a
+					width: 48%
+					height: auto
+
+			&__form-wrap
+				padding: 20px
+
+	.header
+		&__logo
+			img
+				width: 130px
+		&__phone
+			margin-right: 40px
+			.phone__tel
+				font-size: 12px
+		&.sticky
+			.nav-toggle
+				top: 15px
+			.nav
+				top: 60px
+				height: calc(100% - 60px)
+
+	.nav-toggle
+		top: 25px
+
+	.nav
+		top: 75px
+		height: calc(100% - 75px)
+		&__content
+			.phone__tel
+				font-size: 16px
+
+	.hero
+		margin-top: 65px
+		padding-top: 40px
+		padding-bottom: 90px
+		h1
+			font-size: 20px
+			span
+				font-size: 28px
+		&__offer
+			margin-bottom: 40px
+		&__offer-item
+			padding-right: 60px
+			br
+				display: none
+
+	.section
+		padding: 40px 0
+
+	.language-training
+		&-list
+			margin-bottom: 40px
+		&__list
+			li
+				width: 100%
+
+	.our-goal
+		&__content
+			margin-bottom: 30px
+
+	.our-goal-list
+		&__img-wrap
+			&::after
+				bottom: -1px
+
+	.life
+		padding-top: 0
+
+	.life-gallery
+		&__item
+			width: 100%
+			&:nth-child(1)
+				width: 100%
+
+	.news
+		&__accent-content
+			h3
+				font-size: 14px
+
+	.news-list
+		&__content
+			a
+				font-size: 14px
+
+	.advantages-list
+		&__item
+			a
+				padding-left: 80px
+
+	.social
+		a
+			padding: 15px
+
+	.footer
+		&__contact
+			a[href^=tel]
+				display: block
+			.btn
+				padding-right: 20px
+				padding-left: 20px
+				font-size: 14px
+
+	.action-page
+		.hero
+			padding-top: 50px
+			h1
+				font-size: 22px
+			p
+				font-size: 14px
+
+	.form--hr
+		.form__field
+			padding-top: 10px
+			padding-bottom: 10px
+		.form__btn
+			padding-top: 14px
+			padding-bottom: 14px
+
+	.action-list
+		&__item
+			padding: 15px
+			padding-bottom: 25px
+			font-size: 14px
+			h3
+				font-size: 20px
+				margin-left: -15px
+			ul
+				margin-bottom: 20px
+			.btn
+				position: static
+				right: auto
+				bottom: auto
+				display: block
+				margin: 0 auto
+				font-size: 14px
+				font-weight: 600
+
+	.contact
+		padding-bottom: 0
+		&__content
+			padding-top: 0
+			p
+				font-size: 16px
+
+	.social-list
+		margin-bottom: 30px
+
+	.online-page
+		.language-training-list
+			margin-bottom: 40px
+
+	.department
+		&__content
+			text-align: center
+			h3
+				font-size: 18px
+			p:nth-of-type(1)
+				font-size: 26px
+
+	.subsribe
+		.section-title
+			margin-bottom: 20px
+			font-size: 24px
+		.form
+			.form__field
+				padding-top: 10px
+				padding-bottom: 10px
+
+	.hsk-page
+		.hero
+			h1
+				span
+					font-size: 22px
+
+	.teacher-diploma-slider
+		.swiper-wrapper
+			align-items: center
+
+	.teacher
+		.container
+			padding: 0
+
+	.teacher-slider
+		&__item
+			.btn
+				max-width: 210px
+				width: 100%
+				font-size: 14px
+		&__left
+			padding: 15px
+		&__right
+			padding: 15px
+		&__diploma
+			h4
+				text-align: center
+				&::before
+					left: -15px
+				span
+					padding: 0 10px
+
+	.banner
+		margin: 40px 0
+		p
+			font-size: 16px
+		.btn--white
+			font-size: 12px
+
+	.certificate
+		&__left
+			&::after
+				display: none
+
+	.course-page
+		.hero
+			h1
+				span
+					font-size: 28px
+
+	.group-course-list
+		+
+			.btn
+				margin-top: 40px
+				font-size: 12px
+
+	.calc-course__wrap
+		border-width: 5px
+
+	.calc-course-form
+		.form-group
+			legend
+				font-size: 16px
+		&__bottom
+			margin-top: 0
+			.form__btn
+				font-size: 10px
+
+	.pluses
+		padding-bottom: 0
+
+	.corporate-page
+		.hero
+			h1
+				span
+					font-size: 28px
+					margin-bottom: 10px
+			&__form
+				padding: 20px
+
+	.corporate-offer-list
+		&__price
+			font-size: 20px
+			margin-bottom: 30px
+		&__content
+			ul
+				li
+					font-size: 16px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+@media only screen and (min-width : 1440px)
+	.container
+		max-width: 1440px
+

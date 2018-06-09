@@ -1,0 +1,62 @@
+.life
+	background: url('../img/life-bg.jpg') no-repeat center / cover
+	.section-title
+		&::before
+			content: ''
+			display: block
+			margin: 0 auto 40px
+			width: 2px
+			height: 60px
+			background: $accent
+	.container
+		position: relative
+	.btn
+		position: absolute
+		right: 215px
+		bottom: 40px
+
+.life-gallery
+	position: relative
+	min-height: 420px
+	&__item
+		position: absolute
+		display: inline-block
+		border: 6px solid #fff
+		box-shadow: 5px 0 10px rgba(#000, 0.2)
+		width: auto
+		overflow: hidden
+		img
+			+transition(1s)
+		&:nth-child(1)
+			width: 330px
+			height: 185px
+			top: 140px
+			left: 190px
+			border: 0
+
+		&:nth-child(2)
+			top: 0
+			left: 500px
+			img
+				height: 170px
+		&:nth-child(3)
+			bottom: 0
+			left: 540px
+			z-index: 1
+			img
+				height: 210px
+		&:nth-child(4)
+			bottom: 60px
+			right: 285px
+			img
+				height: 210px
+		&:nth-child(5)
+			top: 45px
+			right: 190px
+			img
+				height: 125px
+		&:hover
+			img
+				transform: scale(1.2)
+
+	

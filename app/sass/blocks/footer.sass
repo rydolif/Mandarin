@@ -1,0 +1,160 @@
+.footer
+	padding-top: 70px
+	padding-bottom: 30px
+	background: #1d1d22
+
+	&__top
+		display: flex
+		justify-content: space-between
+
+	&__menu
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+		h3
+			margin-bottom: 15px
+			font-size: 16px
+			font-weight: 400
+			color: #fff
+		ul
+			margin: 0
+			margin-bottom: 25px
+			padding: 0
+			list-style: none
+			li
+				margin-bottom: 5px
+				&:last-child
+					margin-bottom: 0
+			a
+				font-size: 13px
+				color: #ccc
+				+transition
+				&:hover, &:focus
+					color: $accent
+
+	&__contact-wrap
+		display: flex
+		margin-top: 60px
+
+	&__contact
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-grow: 1
+		margin-left: 5px
+		padding: 20px 30px
+		background: rgba(#1a1a1e, 0.6)
+		border-radius: 4px
+		a[href^="mailto"]
+			font-size: 18px
+			color: $accent
+			text-decoration: underline
+			+transition
+			&:hover, &:focus
+				color: #fff
+		a[href^="tel"]
+			font-size: 30px
+			font-weight: 600
+			color: #fff
+			+transition
+			span
+				font-weight: 300
+				color: #ccc
+				+transition
+			&:hover, &:focus
+				color: $accent
+				span
+					color: $accent
+		.btn
+			padding: 20px 45px
+			font-size: 18px
+			font-weight: 600
+			text-transform: uppercase
+
+	&__quick-response
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 15px 0
+		border-top: 1px solid #2a2a2f
+		border-bottom: 1px solid #2a2a2f
+		p
+			margin: 0
+			// margin-right: 70px
+			font-size: 16px
+			color: #ccc
+		&-btn
+			max-width: 330px
+			width: 100%
+			padding: 15px 30px
+			font-size: 16px
+			font-weight: 600
+			color: #fff
+			line-height: 1.3
+			text-align: center
+			border-radius: 4px
+			+transition
+			.fab
+				margin-right: 5px
+				font-weight: 400
+			&.vk
+				background: #5788bd
+				&:hover
+					background: lighten(#5788bd, 5%)
+					color: #fff
+				&:focus
+					background: darken(#5788bd, 5%)
+			&.tg
+				background: #0088cc
+				&:hover
+					background: lighten(#0088cc, 5%)
+					color: #fff
+				&:focus
+					background: darken(#0088cc, 5%)
+			&.fb
+				background: #496194
+				&:hover
+					background: lighten(#496194, 5%)
+					color: #fff
+				&:focus
+					background: darken(#496194, 5%)
+
+	&__bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 35px
+
+.copyright
+	color: #ccc
+
+
+.social
+	margin: 0
+	padding: 0
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	max-width: 325px
+	li
+		width: 49%
+		margin-right: 5px
+		margin-bottom: 5px
+		&:nth-child(2n)
+			margin-right: 0
+		&:nth-child(n + 2)
+			margin-bottom: 0
+	a
+		display: block
+		padding: 15px 20px
+		font-size: 16px
+		font-weight: 600
+		color: #fff
+		border-radius: 4px
+		background: rgba(#1a1a1e, 0.6)
+		+transition
+		.fab
+			margin-right: 5px
+			font-weight: 400
+		&:hover
+			color: $accent

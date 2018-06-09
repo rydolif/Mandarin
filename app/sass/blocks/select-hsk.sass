@@ -1,0 +1,55 @@
+.select-hsk
+	padding-bottom: 0
+
+.select-hsk-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	&__item
+		width: 31.2%
+		background: #f7f8f8
+		border-radius: 4px
+		margin-right: 30px
+		margin-bottom: 30px
+		box-shadow: 0 5px 10px rgba(#000, 0.1)
+		&:nth-child(3n), &:last-child
+			margin-right: 0
+	&__title-wrap
+		position: relative
+		margin: 15px 15px 0
+		padding: 30px 35px
+		background: $blue url('../img/hsk-list.png') no-repeat right center
+		border-radius: 4px
+		overflow: hidden
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background: rgba($blue, 0.7)
+			z-index: -1
+		h3
+			margin: 0
+			font-size: 16px
+			color: #fff
+	&__content
+		padding: 20px 50px 40px
+		font-size: 16px
+		p
+			strong, b
+				color: $dark-gray
+			span
+				color: $blue
+	&__price
+		font-size: 24px
+		font-weight: 900
+		color: $dark-gray
+	&__bottom
+		padding: 25px
+		background: #f1f1f1
+		text-align: center
+		.btn
+			text-transform: uppercase

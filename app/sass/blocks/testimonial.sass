@@ -1,0 +1,43 @@
+.testimonial
+	padding-top: 180px
+	text-align: center
+	.section-title
+		overflow: hidden
+		span
+			position: relative
+			display: inline-block
+			&::before, &::after
+				content: ''
+				position: absolute
+				top: 50%
+				display: block
+				height: 1px
+				width: 600px
+				background: #e0e1df
+			&::before
+				right: 100%
+				margin-right: 30px
+			&::after
+				left: 100%
+				margin-left: 30px
+
+.testimonial-slider
+	padding-bottom: 85px
+	.swiper-wrapper
+		align-items: center
+	&__item
+		opacity: 0.25
+		transform: scale(0.8)
+		+transition
+		&.swiper-slide-active
+			opacity: 1
+			transform: scale(1)
+			z-index: 1
+	.swiper-button-next,
+	.swiper-button-prev
+		background: $accent
+		color: #fff
+	.swiper-button-next
+		right: 270px
+	.swiper-button-prev
+		left: 270px

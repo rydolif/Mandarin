@@ -1,0 +1,111 @@
+.action
+	&__filter
+		display: flex
+		justify-content: center
+		margin-bottom: 50px
+		&-btn
+			padding: 7px 30px
+			background: #eff1f1
+			border: 1px solid $gray
+			border-left: 0
+			font-size: 16px
+			font-weight: 700
+			color: $main-color
+			cursor: pointer
+			+transition
+			&:first-child
+				border-left: 1px solid $gray
+				border-radius: 25px 0 0 25px
+			&:last-child
+				border-radius: 0 25px 25px 0
+			&:hover
+				background-color: $blue
+				border-color: $blue
+				color: #fff
+				box-shadow: 0 10px 30px rgba($blue, 0.5)
+			&:focus
+				outline: none
+			&.is-checked
+				background-color: $blue
+				border-color: $blue
+				color: #fff
+				box-shadow: 0 10px 30px rgba($blue, 0.5)
+
+.action-list
+	&__item
+		position: relative
+		margin-bottom: 30px
+		height: calc(100% - 30px)
+		padding: 30px 20px 40px
+		background-position: center
+		background-size: cover
+		font-size: 16px
+		color: $light-blue
+		border-radius: 8px
+		box-shadow: 10px 0 30px rgba(#000, 0.15)
+		overflow: hidden
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-image: linear-gradient(45deg, rgba(#1d1d22, 0.8) 40%, rgba(#fff, 0))
+			z-index: -1
+		h3
+			margin: 0
+			margin-left: -20px
+			padding-left: 17px
+			font-size: 24px
+			font-weight: 700
+			color: #fff
+			border-left: 3px solid $accent
+			+ p
+				margin-bottom: 55px
+		ul
+			margin: 0
+			padding: 0
+			list-style: none
+			display: flex
+			flex-direction: column
+			max-width: 330px
+			li
+				span
+					font-weight: 600
+					color: #fff
+				&:nth-child(2)
+					margin-bottom: 25px
+				&:last-child
+					margin-top: auto
+		.btn
+			position: absolute
+			right: 30px
+			bottom: 30px
+			text-transform: uppercase
+			font-weight: 900
+			box-shadow: 0 0 0 5px rgba(#f08604, 0.2), 0 10px 30px rgba(#f08604, 0.5)
+
+.action-page
+	.hero
+		padding-top: 80px
+		padding-bottom: 60px
+		&__content
+			flex-direction: column
+			text-align: center
+			p
+				margin-bottom: 20px
+				color: #fff
+				&::before
+					display: none
+				&:first-child
+					text-transform: uppercase
+				&:last-child
+					font-size: 22px
+			h1
+				margin-bottom: 25px
+				font-size: 48px
+				font-weight: 900
+				text-transform: uppercase
+		

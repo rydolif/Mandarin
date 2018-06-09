@@ -1,0 +1,80 @@
+.certificate
+	padding-bottom: 0
+	.section-title
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 48px
+			height: 42px
+			margin: 0 auto 10px
+			background: url('../img/icon/icon-graduation.svg') no-repeat
+	&__wrap
+		display: flex
+		justify-content: space-between
+		padding-left: 120px
+		padding-right: 240px
+	&__left
+		position: relative
+		width: 65.71%
+		height: 690px
+		display: flex
+		justify-content: center
+		align-items: center
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			display: block
+			width: 450px
+			height: 450px
+			transform: translate(-50%, -50%)
+			border-radius: 50%
+			background: #f4f8fb
+			z-index: -1
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 690px
+			height: 690px
+			border: 1px solid #eaeaea
+			border-radius: 50%
+	.decorate-arrow
+		right: 50px
+		top: 125px
+		z-index: 1
+
+	&__right
+		width: 31.42%
+		padding-top: 75px
+		font-size: 18px
+		p
+			margin-bottom: 30px
+			strong
+				color: $dark-gray
+			b
+				font-size: 24px
+				font-weight: 700
+				color: $accent
+			span
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0
+					display: block
+					height: 2px
+					width: 100%
+					background: $accent
+				// text-decoration: line-through
+		.btn
+			width: 100%
+			padding-top: 20px
+			padding-bottom: 20px
+			text-transform: uppercase
+			box-shadow: 0 0 0 5px rgba(#f08604, 0.2), 0 10px 50px rgba(#f08604, 0.5)

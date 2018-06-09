@@ -1,0 +1,51 @@
+.testimonial-client
+
+.testimonial-client-slider
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	padding: 0 240px
+	&__item
+		text-align: center
+		img
+			margin-bottom: 20px
+			border-radius: 50%
+		a
+			text-decoration: underline
+	&__content
+		position: relative
+		margin: 0 0 55px
+		&::before
+			content: '\f10d'
+			+font-aw
+			display: block
+			margin-bottom: 15px
+			font-size: 30px
+			color: $accent
+		p
+			font-size: 18px
+			font-weight: 300
+			font-style: italic
+	&__author
+		margin: 0
+		font-size: 18px
+		font-weight: 600
+		color: $dark-gray
+	.swiper-button-prev,
+	.swiper-button-next
+		width: 60px
+		height: 60px
+		box-shadow: none
+		border: 1px solid $accent
+		font-size: 30px
+		line-height: 60px
+		color: $accent
+		+transition
+		&:hover
+			color: lighten($accent, 15%)
+			border-color: lighten($accent, 15%)
+		&:active
+			color: darken($accent, 10%)
+			border-color: darken($accent, 10%)
+	.swiper-button-next
+		padding-left: 5px

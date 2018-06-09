@@ -1,0 +1,147 @@
+.news
+	.section-title
+		&::before
+			content: ''
+			display: block
+			width: 46px
+			height: 30px
+			margin: 0 auto
+			background: url('../img/icon/icon-speaker.svg') no-repeat
+
+	&__container
+		padding: 0 120px
+		.btn
+			float: right
+			padding: 10px 20px
+			font-size: 14px
+			background: #f6f7f7
+			box-shadow: none
+			color: $accent
+			.fas
+				font-size: 11px
+				margin-left: 5px
+			&:hover, &:focus
+				background: $accent
+				color: #fff
+
+	&__accent
+		position: relative
+		border-radius: 4px
+		overflow: hidden
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-image: linear-gradient(rgba(#fff, 0), rgba(#000, 0.5))
+		img
+			width: 100%
+		&-content
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 1
+			h3
+				padding-left: 20px
+				padding-right: 20px
+				border-left: 3px solid $accent
+			a
+				color: #fff
+				+transition
+				&:hover, &:focus
+					color: $accent
+
+		&-bottom
+			display: flex
+			padding: 15px 20px
+			color: $light-blue
+			font-size: 12px
+		&-date
+			margin-right: 30px
+			&::before
+				content: '\f133'
+				+font-aw(400)
+				margin-right: 5px
+				color: #fff
+		&-cat
+			margin: 0
+			padding: 0
+			a
+				color: inherit
+
+.news-list
+	margin: 0
+	margin-bottom: 30px
+	padding: 0
+	list-style: none
+	&__item
+		display: flex
+		border: 1px solid #eaeaea
+		border-radius: 4px
+		margin-bottom: 3px
+		+transition
+		&:last-child
+			margin-bottom: 0
+		&:hover, &:focus
+			background-color: $light-gray
+			.news-list__date
+				b
+					color: $accent
+
+	&__date-wrap
+		display: flex
+		flex-shrink: 0
+		width: 55px
+		padding: 10px
+		border-right: 1px solid #eaeaea
+
+	&__date
+		margin: auto
+		color: $gray
+		text-align: center
+		font-size: 10px
+		b
+			display: block
+			font-size: 30px
+			font-weight: 600
+			line-height: 1
+			margin-bottom: -3px
+			+transition
+
+	&__content
+		padding: 15px
+		h3
+			font-weight: 600
+			line-height: 1.3
+		a
+			font-size: 16px
+			color: $dark-gray
+			+transition
+			&:hover, &:focus
+				color: $accent
+		ul
+			margin: 0
+			padding: 0
+			display: flex
+			list-style: none
+			li
+				&::before
+					content: ''
+					display: inline-block
+					vertical-align: middle
+					margin-right: 5px
+					width: 3px
+					height: 3px
+					border-radius: 50%
+					background: #aeaeae
+			a
+				font-size: 14px
+				color: #aeaeae
+				+transition
+				&:hover
+					color: $accent
+					text-decoration: underline

@@ -1,0 +1,36 @@
+.hsk-page
+	.hero
+		padding-bottom: 0
+		&__content
+			flex-direction: column
+		h1
+			text-transform: uppercase
+			span
+				font-size: 48px
+		h2
+			margin-bottom: 20px
+			font-size: 24px
+			font-weight: 700
+			color: #fff
+			text-transform: uppercase
+			span
+				color: $accent
+		p
+			&::before
+				display: none
+		&__bottom
+			position: relative
+			bottom: -50px
+			padding: 10px
+			background: #fff
+			border: 5px solid #f7f7f7
+			border-radius: 4px
+			box-shadow: 0 10px 30px rgba(#000, 0.2)
+			p
+				&:first-child
+					color: $dark-gray
+				&:last-child
+					color: #888
+
+	.breadcrumb-wrap
+		padding-top: 80px

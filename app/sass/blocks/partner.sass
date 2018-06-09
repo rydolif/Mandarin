@@ -1,0 +1,47 @@
+.partner
+	background: url('../img/partner-bg.jpg') no-repeat center top / cover
+	.section-title
+		overflow: hidden
+		&::before
+			content: ''
+			display: block
+			width: 48px
+			height: 32px
+			margin: 0 auto 10px
+			background: url('../img/icon/icon-hand.svg') no-repeat
+		span
+			position: relative
+			display: inline-block
+			&::before, &::after
+				content: ''
+				position: absolute
+				top: 50%
+				width: 1000px
+				height: 1px
+				background: #eaeaea
+			&::before
+				right: 100%
+				margin-right: 20px
+			&::after
+				left: 100%
+				margin-left: 20px
+
+.partner-list
+	margin: 0
+	padding: 0 120px
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	&__item
+		width: 20%
+		margin-bottom: 70px
+		text-align: center
+	img
+		opacity: 0.6
+		filter: grayscale(100%)
+		+transition
+		&:hover
+			opacity: 1
+			filter: grayscale(0)

@@ -1,0 +1,102 @@
+.contact
+	position: relative
+	padding: 0
+	background: #f4f8fb
+	overflow: hidden
+	&__content
+		padding-top: 70px
+		padding-bottom: 120px
+		padding-left: 105px
+		color: $dark-gray
+		h3
+			font-size: 24px
+			font-weight: 900
+		p
+			margin-bottom: 30px
+			font-size: 18px
+			font-weight: 600
+		a[href^="mailto"]
+			font-size: 16px
+			color: $main-color
+			+transition
+			&:hover
+				color: $accent
+		a[href^="tel"]
+			font-size: 30px
+			font-weight: 600
+			color: $dark-gray
+			line-height: 1.2
+			+transition
+			span
+				font-weight: 300
+			&:hover
+				color: $accent
+
+	&__map
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 100%
+
+	&__address
+		position: relative
+
+	&__list
+		position: absolute
+		max-width: 215px
+		bottom: calc(100% + 20px)
+		width: 100%
+		margin: 0
+		margin-top: 20px
+		padding: 15px
+		list-style: none
+		background: #fff
+		border-radius: 4px
+		box-shadow: 0 5px 10px rgba(#000, 0.1)
+		z-index: 3
+		opacity: 0
+		visibility: hidden
+		+transition
+		&::before
+			content: ''
+			position: absolute
+			bottom: -15px
+			left: 50%
+			transform: translateX(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 15px 15px 0 15px
+			border-color: #fff transparent transparent transparent
+		&.open
+			opacity: 1
+			visibility: visible
+		li:not(:last-child)
+			margin-bottom: 5px
+		a
+			font-size: 16px
+			font-weight: 600
+			color: $dark-gray
+			+transition
+			&:hover
+				color: $accent
+
+
+.social-list
+	margin: 30px 0 50px
+	padding: 0
+	list-style: none
+	display: flex
+	li
+		margin-right: 20px
+	a
+		font-size: 18px
+		color: $main-color
+		+transition
+		&:hover
+			color: $accent
+
+#map
+	height: 100%
+	width: 100%

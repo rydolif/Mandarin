@@ -1,0 +1,27 @@
+.breadcrumb-wrap
+	padding: 25px 0 0
+	text-align: center
+
+.breadcrumbs
+	margin: 0
+	padding: 0
+	list-style: none
+	display: flex
+	justify-content: center
+	li
+		// margin-right: 20px
+		&::after
+			content: '/'
+			display: inline-block
+			margin: 0 10px
+		&:last-child
+			&::after
+				display: none
+	a
+		color: $main-color
+		+transition
+		&:hover
+			color: $blue
+	span
+		color: $accent
+		text-decoration: underline

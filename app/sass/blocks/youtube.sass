@@ -1,0 +1,42 @@
+.youtube
+	background-color: #000
+	position: relative
+	padding-top: 56.25%
+	overflow: hidden
+	cursor: pointer
+
+.youtube img
+	width: 100%
+	top: -16.84%
+	left: 0
+	opacity: 0.7
+
+
+.youtube .play-button
+	z-index: 1
+
+.youtube .play-button:before
+	content: '\f144'
+	+font-aw(400)
+	font-size: 48px
+	line-height: 1
+	color: #fff
+
+.youtube img,
+.youtube .play-button
+  cursor: pointer
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button
+  position: absolute
+
+.youtube .play-button
+  right: 20px
+  bottom: 20px
+
+.youtube iframe
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
