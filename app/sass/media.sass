@@ -205,6 +205,24 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+	.translation-page
+		&__services
+			p
+				margin-bottom: 30px
+
+			strong, b
+				margin-bottom: 30px
+
+			&_wrap
+				padding: 0
+				&-img
+					margin-bottom: 30px
+					img
+						height: auto
+
+		&__btn
+			margin-bottom: 30px
+
 	.page-news
 		&__list
 			h3
@@ -1159,6 +1177,23 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+
+	.translation-page
+
+		.content
+			ol
+				padding-left: 15px
+
+		&__services
+			&_wrap
+				flex-wrap: wrap
+
+			&_item
+				width: 100%
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+
 	.page-news
 		.search__wrap
 			flex-wrap: wrap

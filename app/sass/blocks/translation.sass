@@ -1,0 +1,84 @@
+.translation-page
+	&__services
+		background-position: center
+		background-size: cover
+		&_wrap
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			padding: 0 105px
+			margin-bottom: 60px
+		text-align: center
+
+		&_item
+			position: relative
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			width: 32%
+			background: #fff
+			border-radius: 8px
+			overflow: hidden
+			box-shadow: 0 5px 20px rgba(0,0,0,.05)
+			transition: all .2s ease-in-out
+
+		p
+			font-size: 18px
+			color: $dark-gray
+			font-weight: 600
+			margin-bottom: 40px
+			flex-grow: 1
+
+		strong, b
+			font-size: 24px
+			color: $dark-gray
+			font-weight: 800
+			margin-bottom: 45px
+
+		&_wrap-img
+			position: relative
+			overflow: hidden
+			z-index: 1
+			margin-bottom: 40px
+			&::before
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				width: 100%
+				background-image: linear-gradient(-90deg,rgba(42,146,245,.7),rgba(255,255,255,0))
+
+			img
+				width: 100%
+				height: 190px
+
+	&__btn
+		width: 180px
+		margin: 0 auto
+		margin-bottom: 35px
+
+	.hero
+		h1
+			margin-bottom: 0
+
+			span
+				margin-bottom: 0
+				font-size: 57px
+
+	.hero__content-left
+		display: flex
+		align-items: center
+	
+	.content
+		ol
+			padding-left: 135px
+			font-size: 16px
+			color: #555
+
+			li
+				padding-left: 0
+				&::before
+					display: none
+
+	.phone__callback
+		display: inline-block
