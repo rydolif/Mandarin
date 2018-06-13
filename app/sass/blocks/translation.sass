@@ -2,13 +2,14 @@
 	&__services
 		background-position: center
 		background-size: cover
+		text-align: center
+		
 		&_wrap
 			display: flex
 			flex-direction: row
 			justify-content: space-between
 			padding: 0 105px
 			margin-bottom: 60px
-		text-align: center
 
 		&_item
 			position: relative
@@ -20,7 +21,11 @@
 			border-radius: 8px
 			overflow: hidden
 			box-shadow: 0 5px 20px rgba(0,0,0,.05)
-			transition: all .2s ease-in-out
+			transition: all .2s
+			animation: item-back .3s linear 1 forwards
+			&:hover
+				animation: item .3s linear 1 forwards
+				transition: all .2s
 
 		p
 			font-size: 18px
@@ -82,3 +87,45 @@
 
 	.phone__callback
 		display: inline-block
+
+	&__advantages
+		padding: 140px 0
+		background-position: center
+		h3
+			color: #677179
+		p
+			color: #677179
+
+		.pluses__left
+			border: 6px solid #ebf6f6
+
+		.pluses-list__item:nth-child(1)::after, .pluses-list__item:nth-child(4)::after
+			display: none
+
+		.pluses__right
+			svg
+				fill: #F08604
+
+		.pluses-list__item
+			padding-left: 100px
+			padding-right: 10px
+
+	.testimonial-client
+		padding-bottom: 0
+
+
+@keyframes item
+	0%
+		margin-top: 10px
+		margin-bottom: 0px
+	100%
+		margin-top: 0
+		margin-bottom: 10px
+
+@keyframes item-back
+	0%
+		margin-top: 0
+		margin-bottom: 10px
+	100%
+		margin-top: 10px
+		margin-bottom: 0px

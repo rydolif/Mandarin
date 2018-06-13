@@ -1,0 +1,137 @@
+.franchise-page
+	.hero
+		padding-bottom: 0
+
+		h1
+			font-size: 42px
+			margin-bottom: 100px
+
+		&__bottom
+			position: relative
+			bottom: -35px
+			padding: 20px 110px
+			background: #fff
+			border: 5px solid #f7f7f7
+			border-radius: 4px
+			box-shadow: 0 10px 30px rgba(0,0,0,.2)
+			margin: 0 120px
+			&::before
+				content: ''
+				position: absolute
+				top: -40px
+				left: -40px
+				display: block
+				width: calc(100% + 80px)
+				height: calc(100% + 90px)
+				border: 10px solid rgba(246,247,247,.2)
+				z-index: -1
+
+			p
+				&:first-child
+					color: $dark-gray
+					margin-bottom: 30px
+
+	.section-title
+		overflow: hidden
+		&::before
+			display: none
+		span
+			position: relative
+			display: inline-block
+			&::before, &::after
+				content: ''
+				position: absolute
+				top: 50%
+				width: 1000px
+				height: 1px
+				background: #eaeaea
+			&::before
+				right: 100%
+				margin-right: 20px
+			&::after
+				left: 100%
+				margin-left: 20px
+
+	.breadcrumb-wrap
+		padding-top: 60px
+
+	.content
+		.arrow
+			li
+				padding-left: 17px
+				color: #555
+				font-weight: 400
+
+				&::before
+					display: none
+
+				&::after
+					content: "\f061"
+					position: absolute
+					top: 2px
+					left: 0
+					font-family: $fontawesome
+					color: $accent
+					font-size: 14px
+					font-weight: 600
+		ul
+			li
+				font-weight: 400
+				color: #555
+				&::before
+					display: none
+				&::after
+					content: "-"
+					position: absolute
+					top: 2px
+					left: 0
+	
+	.the-best
+		background-position: center
+		background-size: cover
+		font-size: 18px
+
+		h2
+			font-size: 24px
+			color: $dark-gray
+			text-align: center
+			font-weight: 800
+			line-height: 1.2
+			margin-bottom: 100px
+
+		ul
+			list-style-type: none
+			color: $dark-gray
+			font-weight: 600
+			padding-left: 0
+
+		li
+			margin-bottom: 35px
+
+		&__wrap
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			padding: 0 120px
+			margin-bottom: 150px
+
+		&__item
+			padding-left: 120px
+			width: 55%
+
+		&__block
+			width: 43%
+			height: 250px
+			position: relative
+
+		&__form
+			h2
+				margin-bottom: 60px
+
+
+.all
+	text-align: center
+	margin-top: 50px
+	.phone__callback
+		display: inline-block
