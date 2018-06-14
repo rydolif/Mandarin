@@ -142,10 +142,36 @@
 	.place
 		&__wrap
 			padding: 0 120px
+			position: relative
+
+			&_block
+				position: absolute
+				left: 120px
+				top: 0
+				width: 240px
+				height: 140px
+				background-color: #fff
+				box-shadow: 10px 10px 20px rgba(0, 0, 0, .1)
+				padding: 40px
+				font-size: 16px
+				p
+					color: $dark-gray
+					font-weight: 400
+					&:last-child
+						i
+							color: #f17976
+					i
+						color: #58bd42
+						margin-right: 5px
+
+
+			&_map
+				border-radius: 8px
+				overflow: hidden
 
 			iframe
 				width: 100%
-				
+
 		.section-title
 			position: relative
 			&::before
