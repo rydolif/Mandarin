@@ -1,0 +1,207 @@
+.contacts-page
+	.hero
+		padding: 65px 0
+		background-position: center
+		&::before
+			display: none
+
+		h1
+			font-size: 24px
+			margin-bottom: 0
+			span
+				font-size: 36px
+				margin-bottom: 0
+
+	.address
+		padding-bottom: 0
+
+		.qr
+			width: 130px
+			height: 130px
+			img
+				width: 100%
+				height: 100%
+
+		&__wrap
+			padding: 0 120px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+
+			&_info
+				width: 65%
+			
+				ul
+					list-style-type: none
+					padding: 0
+					margin: 0 0 20px 0
+
+				li
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					margin-bottom: 15px
+					&:last-child
+						margin-bottom: 0
+
+				strong
+					display: block
+					width: 35%
+					font-size: 16px
+					color: #222
+					font-weight: 600
+
+				span
+					display: block
+					width: 65%
+					color: $main-color
+					font-size: 16px
+
+				a
+					color: $main-color
+
+			&_btn
+				width: 32%
+				display: flex
+				flex-direction: column
+				align-items: center
+				padding-top: 10px
+
+				a
+					width: 100%
+					padding: 30px 0
+					border: 1px solid #f4f8fb
+					text-align: center
+					margin-bottom: 10px
+					font-size: 16px
+					color: #222
+					font-weight: 600
+					transition: all .3s
+					&:hover
+						background-color: #f4f8fb
+					&:first-child
+						i
+							color: $accent
+					&:last-child
+						margin-bottom: 0
+
+					i
+						color: $blue
+						font-size: 16px
+						margin-left: 10px
+						margin-top: 5px
+	
+	.office
+		background-position: 0 -200px
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 1
+		padding: 100px 0 80px 0
+
+		.section-title
+			overflow: hidden
+			margin-bottom: 75px
+			span
+				position: relative
+				display: inline-block
+				&::before, &::after
+					content: ''
+					position: absolute
+					top: 50%
+					width: 1000px
+					height: 1px
+					background: #eaeaea
+				&::before
+					right: 100%
+					margin-right: 20px
+				&::after
+					left: 100%
+					margin-left: 20px
+
+		&__list
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			flex-wrap: wrap
+
+		&__item
+			width: 32%
+			margin-bottom: 35px
+			max-height: 300px
+			min-height: 100%
+
+	.page-news__btn
+		background-color: #fff
+		color: $main-color
+		transiton: all .3s
+		border-radius: 8px
+		&:hover
+			background-color: #f08604
+			color: #fff
+
+	.place
+		&__wrap
+			padding: 0 120px
+
+			iframe
+				width: 100%
+				
+		.section-title
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 50px
+				height: 50px
+				margin: 0 auto
+				background: url(../img/icon/icon-map.svg) no-repeat
+
+	.requisites
+		font-size: 16px
+		color: $main-color
+
+		strong, b
+			font-weight: 600
+			color: $dark-gray
+
+		&__wrap
+			padding: 0 120px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+
+		&__left
+			width: 48%
+			background-color: #f4f8fb
+			overflow: hidden
+			position: relative
+			padding: 60px 100px 80px 120px
+
+			&::before
+				content: ""
+				position: absolute
+				left: -35px
+				top: -35px
+				width: 70px
+				height: 70px
+				background-color: $accent
+				transform: rotate(45deg)
+
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+
+			h3
+				font-size: 24px
+				font-weight: 800
+				color: $dark-gray
+
+			ul
+				font-weight: 600
+				color: $dark-gray
+
+		&__right
+			width: 48%
+			padding: 65px 0
+

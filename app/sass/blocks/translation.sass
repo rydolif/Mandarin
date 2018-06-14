@@ -98,6 +98,8 @@
 
 		.pluses__left
 			border: 6px solid #ebf6f6
+			img
+				margin-bottom: 35px
 
 		.pluses-list__item:nth-child(1)::after, .pluses-list__item:nth-child(4)::after
 			display: none
@@ -107,8 +109,18 @@
 				fill: #F08604
 
 		.pluses-list__item
-			padding-left: 100px
+			padding-left: 110px
 			padding-right: 10px
+			&:nth-child(1)
+				padding-top: 45px
+			&:nth-child(2)
+				padding-top: 45px
+			&:nth-child(n+3)
+				svg
+					top: 50px
+
+			svg
+				top: 50px
 
 	.testimonial-client
 		padding-bottom: 0

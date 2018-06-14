@@ -1,6 +1,18 @@
 /*==========  Desktop First  ==========*/
 
 @media only screen and (max-width : 1439px)
+	.contacts-page
+		.place
+			&__wrap
+				padding: 0
+
+
+		.address__wrap
+			padding: 0
+
+		.requisites__wrap
+			padding: 0
+
 	.franchise-page
 		.the-best
 			h2
@@ -660,6 +672,56 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.contacts-page
+		.hero
+			h1
+				font-size: 24px
+				span
+					font-size: 28px
+
+		.address
+			.qr
+				margin: 0 auto
+
+			&__wrap
+				flex-direction: column
+
+				&_info
+					width: 100%
+
+					strong
+						width: 40%
+
+				&_btn
+					width: 100%
+
+		.office
+			text-align: center
+			padding-bottom: 40px
+			padding-top: 40px
+			.section-title
+				margin-bottom: 40px
+			
+			&__list
+				justify-content: center
+				flex-direction: column
+
+			&__item
+				width: 100%
+
+		.requisites
+			&__wrap
+				flex-direction: column
+
+			&__left
+				width: 100%
+
+			&__right
+				width: 100%
+				padding-bottom: 0
+
+
+
 	.franchise-page
 		.section
 			padding-bottom: 0
@@ -1748,6 +1810,32 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.contacts-page
+		.hero
+			h1
+				font-size: 20px
+				span
+					font-size: 24px
+
+		.address
+			&__wrap
+				&_info
+					text-align: center
+					strong
+						width: 100%
+
+					span
+						width: 100%
+
+					li
+						flex-direction: column
+
+		.requisites
+			&__left
+				padding: 40px
+			&__right
+				padding-top: 40px
+
 	.franchise-page
 		.hero
 			h1
