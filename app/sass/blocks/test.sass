@@ -1,0 +1,102 @@
+.test
+	padding-bottom: 80px
+	&__filter
+		justify-content: center
+		margin-bottom: 80px
+	&__item
+		&-right
+			h3
+				font-size: 24px
+				font-weight: 700
+				color: $dark-gray
+				text-align: center
+	&__content
+		padding-left: 70px
+	&__question
+		color: $dark-gray
+	&__answer-form
+		margin-top: 40px
+		.form-group
+			margin-bottom: 15px
+	&__submit
+		margin-top: 140px
+
+.test-breadcrumb
+	margin: 0
+	margin-bottom: 45px
+	padding: 0
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	&__item
+		margin-right: 2px
+		margin-bottom: 2px
+		padding: 8px 35px
+		border: 1px solid #eaeaea
+		font-size: 18px
+		font-weight: 600
+		line-height: 1
+		&:last-child
+			margin-right: 0
+		&.active
+			background: $accent
+			color: #fff
+			border-color: $accent
+
+#test-chart
+
+
+.test-opinion
+	padding-top: 100px
+	background: url('../img/test-opinion-bg.jpg') no-repeat center / cover
+	.section-title
+		margin-bottom: 100px
+		overflow: hidden
+		span
+			position: relative
+			display: inline-block
+			&::before, &::after
+				content: ''
+				position: absolute
+				top: 50%
+				width: 1000px
+				height: 1px
+				background: #eaeaea
+			&::before
+				right: 100%
+				margin-right: 50px
+			&::after
+				left: 100%
+				margin-left: 50px
+	&__content
+		position: relative
+		max-width: 940px
+		width: 100%
+		margin: 0 auto
+		text-align: center
+		img
+			margin-bottom: 20px
+			border-radius: 50%
+		&::before
+			content: '\f10d'
+			+font-aw
+			display: block
+			margin-bottom: 15px
+			font-size: 30px
+			color: $accent
+	&__text
+		margin: 0 0 55px
+		font-size: 24px
+		font-weight: 600
+		font-style: italic
+	&__author
+		margin: 0
+		font-size: 18px
+		font-weight: 600
+		color: $dark-gray
+		font-style: normal
+
+
+.test-page
+	.hero
+		padding: 50px 0
