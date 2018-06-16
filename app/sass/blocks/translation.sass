@@ -1,8 +1,13 @@
 .translation-page
+	.hero
+		&::before
+			display: none
+
 	&__services
 		background-position: center
 		background-size: cover
 		text-align: center
+		padding-top: 80px
 		
 		&_wrap
 			display: flex
@@ -23,10 +28,15 @@
 			box-shadow: 0 5px 20px rgba(0,0,0,.05)
 			transition: all .2s
 			animation: item-back .3s linear 1 forwards
+			box-shadow: 0 10px 30px rgba(0, 0, 0, .15)
 			&:hover
 				animation: item .3s linear 1 forwards
 				transition: all .2s
-
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+			&:focus
+				animation: item .3s linear 1 forwards
+				transition: all .2s
+				box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
 		p
 			font-size: 18px
 			color: $dark-gray
@@ -75,6 +85,11 @@
 		align-items: center
 	
 	.content
+		p
+			strong
+				font-weight: 700
+				font-size: 17px
+				color: $dark-gray
 		ol
 			padding-left: 135px
 			font-size: 16px
@@ -87,14 +102,24 @@
 
 	.phone__callback
 		display: inline-block
+		i
+			font-size: 12px
 
 	&__advantages
 		padding: 140px 0
 		background-position: center
 		h3
 			color: #677179
+			span
+				font-weight: 700
+				line-height: 1
+
 		p
 			color: #677179
+			strong
+				font-size: 20px
+				line-height: 1
+				font-weight: 700
 
 		.pluses__left
 			border: 6px solid #ebf6f6
@@ -110,7 +135,7 @@
 
 		.pluses-list__item
 			padding-left: 110px
-			padding-right: 10px
+			padding-right: 0
 			&:nth-child(1)
 				padding-top: 45px
 			&:nth-child(2)
@@ -124,7 +149,28 @@
 
 	.testimonial-client
 		padding-bottom: 0
-
+		
+		.section-title
+			margin-bottom: 80px
+			overflow: hidden
+			&::before
+				display: none
+			span
+				position: relative
+				display: inline-block
+				&::before, &::after
+					content: ''
+					position: absolute
+					top: 50%
+					width: 1000px
+					height: 1px
+					background: #eaeaea
+				&::before
+					right: 100%
+					margin-right: 20px
+				&::after
+					left: 100%
+					margin-left: 20px
 
 @keyframes item
 	0%

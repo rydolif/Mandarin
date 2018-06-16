@@ -7,7 +7,9 @@
 
 	.hero
 		padding: 45px 0 35px 0
-
+		background-position: 0
+		&::before
+			display: none
 
 	.search__wrap
 		display: flex
@@ -141,7 +143,7 @@
 				transform: translate(0, -50%)
 				color: $accent
 		img
-			border-radius: 10px
+			border-radius: 5px
 
 		a
 			color: #888
@@ -149,11 +151,12 @@
 	&__btn
 		display: block
 		text-align: center
-		padding: 30px 30px
+		padding: 22px
 		width: 100%
 		border: 1px solid $gray
-		color: $gray
+		color: $main-color
 		transition: all .2s
+		border-radius: 8px
 		&:hover
 			background-color: $accent
 			color: #fff

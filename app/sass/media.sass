@@ -1,6 +1,16 @@
 /*==========  Desktop First  ==========*/
 
 @media only screen and (max-width : 1439px)
+	.page-article
+		.article__gallery
+			h4
+				margin-left: 0
+				margin-bottom: 30px
+
+			&_container
+				a
+					width: 205px
+
 	.ceremony-page
 		.hero
 			h2
@@ -243,6 +253,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+	.contacts-page
+		.office
+			background-position: center
+
 	.franchise-page
 		.hero
 			h1
@@ -273,11 +287,19 @@
 			margin-bottom: 30px
 
 	.page-news
+		.hero
+			h1
+				font-size: 28px
+
 		&__list
 			h3
 				margin-bottom: 0
 		&__item
 			margin-bottom: 25px
+
+			p
+				br
+					display: none
 
 	.page-article
 		.article
@@ -288,10 +310,18 @@
 				margin-bottom: 40px
 
 			&__gallery
+				p
+					margin-left: 0
+
 				&_container
 					a
 						&:nth-child(n+5)
 							margin-bottom: 20px
+
+			&__form
+				margin: 0
+				p
+					margin-left: 0
 
 	.header
 		&__descr
@@ -752,11 +782,11 @@
 				width: 100%
 				padding-bottom: 0
 
-
-
 	.franchise-page
-		.section
+		.life
 			padding-bottom: 0
+			.section-title
+				margin-bottom: 30px
 			
 		.hero
 			h1
@@ -780,7 +810,6 @@
 				width: 100%
 				margin-bottom: 150px
 
-
 	.translation-page
 		&__advantages
 			.pluses__left
@@ -791,46 +820,13 @@
 
 			.pluses-list__item
 				padding-left: 60px
-
-
-	.page-news
-		&__item
-			height: 100%
-			margin-bottom: 25px
-			&:nth-child(1)
-				width: 100%
-				flex-wrap: wrap
-				height: 100%
-				div
-					width: 100%
-				img
-					width: 100%
-					height: 40%
-					margin-bottom: 10px
-
-			&:nth-child(n+2)
-				width: 100%
-				height: 100%
-				flex-wrap: wrap
-				img
-					width: 100%
-					height: 40%
-					margin-bottom: 10px
-
-			&:nth-child(5)
-				width: 100%
-				height: 100%
-				flex-direction: row
-				div
-					width: 100%
-				img
-					width: 100%
-					height: 40%
-					margin-bottom: 10px
-
+				&:nth-child(n+3)
+					svg
+						top: 20px
 
 	.page-article
 		.article
+			padding-top: 40px
 			iframe
 				width: 100%
 
@@ -841,7 +837,6 @@
 
 				.note
 					padding-right: 45px
-
 
 	.header
 		&__city
@@ -1330,6 +1325,47 @@
 	.testimonial-client-slider
 		padding: 0 80px
 
+	.page-news
+		.hero
+			h1
+				margin-bottom: 0
+
+		&__section
+			padding-top: 40px
+
+		&__item
+			height: 100%
+			margin-bottom: 25px
+			&:nth-child(1)
+				width: 100%
+				flex-wrap: wrap
+				height: 100%
+				div
+					width: 100%
+				img
+					width: 100%
+					height: 40%
+					margin-bottom: 10px
+
+			&:nth-child(n+2)
+				width: 100%
+				height: 100%
+				flex-wrap: wrap
+				img
+					width: 100%
+					height: 40%
+					margin-bottom: 10px
+
+			&:nth-child(5)
+				width: 100%
+				height: 100%
+				flex-direction: row
+				div
+					width: 100%
+				img
+					width: 100%
+					height: 40%
+					margin-bottom: 10px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -1339,9 +1375,10 @@
 
 	.franchise-page
 		.hero
-			text-align: center
 			h1
-				font-size: 34px
+				font-size: 32px
+				margin-bottom: 10px
+
 			&__bottom
 				&::before
 					display: none
@@ -1359,19 +1396,36 @@
 		&__services
 			&_wrap
 				flex-wrap: wrap
+				margin-bottom: 40px
 
 			&_item
 				width: 100%
-				margin-bottom: 20px
+				margin-top: 20px
 				&:last-child
 					margin-bottom: 0
+		
+		@keyframes item
+			0%
+				margin-top: 20px
+				margin-bottom: 0px
+			100%
+				margin-top: 0
+				margin-bottom: 20px
+
+		@keyframes item-back
+			0%
+				margin-top: 5px
+				margin-bottom: 20px
+			100%
+				margin-top: 20px
+				margin-bottom: 5px
 
 		&__advantages
 			.pluses__right
 				width: 100%
 			.pluses__left
 				width: 65%
-				margin-bottom: 20px
+				margin-bottom: 0
 
 	.page-news
 		.search__wrap
@@ -1850,17 +1904,16 @@
 		.hero
 			h1
 				span
-					font-size: 24px
+					font-size: 26px
 			h2
 				font-size: 20px
-
 
 	.contacts-page
 		.hero
 			h1
 				font-size: 20px
 				span
-					font-size: 24px
+					font-size: 26px
 		.place
 			&__wrap
 				&_block
@@ -1871,12 +1924,13 @@
 		.address
 			&__wrap
 				&_info
-					text-align: center
 					strong
 						width: 100%
 
 					span
 						width: 100%
+						br
+							display: none
 
 					li
 						flex-direction: column
@@ -1894,6 +1948,11 @@
 		.the-best
 			&__block
 				margin-bottom: 0
+
+		.content__btn-wrap
+			padding: 35px 0
+			a
+				padding: 18px 10px
 
 	.translation-page
 		&__advantages
