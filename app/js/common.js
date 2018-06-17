@@ -1,5 +1,29 @@
 jQuery(document).ready(function($) {
-
+  // slider ceremony
+    var swiper = new Swiper('.ceremony__slider_wrap', {
+      slidesPerView: 2.5,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1.5,
+          spaceBetween: 20
+        },
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        }
+      }
+    });
+    
   // Menu
   $('.nav-toggle').on('click', function(e) {
     e.preventDefault();
